@@ -3,6 +3,8 @@
   <AboutBar />
   <QuestionBar />
   <BagBar />
+  <BusinessBar />
+  <VideoBar />
 </template>
 
 <script>
@@ -10,6 +12,8 @@ import BannerBar from './components/BannerBar.vue';
 import AboutBar from './components/AboutBar.vue'; 
 import QuestionBar from './components/QuestionBar.vue';
 import BagBar from './components/BagBar.vue';
+import BusinessBar from './components/BusinessBar.vue';
+import VideoBar from './components/VideoBar.vue';
 
 export default {
   name: 'App',
@@ -17,7 +21,9 @@ export default {
     BannerBar,
     AboutBar,
     QuestionBar,
-    BagBar
+    BagBar,
+    BusinessBar,
+    VideoBar,
 }
 }
 </script>

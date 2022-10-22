@@ -2,7 +2,7 @@
   <div class="container-bag-bar">
     <div>
         <h2>Como os pontos são calculados?</h2>
-        <p>O estabelecimento parceiro disponibilizará três sacolas para o usuário dividir os recicláveis. Cada tamanho de sacola equivale a uma quantidade de pontos:</p>
+        <p>O estabelecimento parceiro disponibilizará três tamanhos de sacolas para o usuário descartar os recicláveis. Cada tamanho de sacola equivale a uma quantidade específica de pontos:</p>
     <div class="flexBags"> 
       <div>
         <img src="../assets/bag-amarela.png"/>
@@ -29,7 +29,8 @@ export default {
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
     .container-bag-bar {
-        background-color: #003300;
+      background-color: #002100;
+
         margin: 0;
         padding: 40px;
     }
@@ -50,11 +51,22 @@ export default {
     .flexBags {
       display: flex;
       align-items:baseline;
+      justify-content: center;
     }
 
     .flexBags p {
       padding: 0;
       margin: 0;
+    }
+
+    .flexBags img {
+      max-height: 400px;
+    }
+
+    @media screen and (max-width: 992px)  { 
+      .flexBags {
+        flex-direction: column;
+      }
     }
 </style>
   

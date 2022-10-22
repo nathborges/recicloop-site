@@ -56,7 +56,9 @@ export default {
   <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
 .container-question-bar {
-  background-color: #eef2ed;
+  background-image: url('../assets/plastica.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
   margin: 0;
   padding: 40px;
   display: flex;
@@ -66,14 +68,14 @@ export default {
 .container-question-bar h2 {
   font-family: "arboria-bold";
   font-size: 40px;
-  color: grey;
+  color: black;
   margin: 0;
 }
 
 .container-question-bar p {
   font-family: "arboria1";
   font-size: 30px;
-  color: grey;
+  color: black;
 }
 
 .flex-div {
@@ -104,7 +106,7 @@ export default {
   max-height: 150px;
 }
 
-@media only screen and (max-device-width: 480px){
+@media screen and (max-width: 992px) {
   .flex-div {
     flex-direction: column;
   }

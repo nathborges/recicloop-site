@@ -4,7 +4,7 @@
     <div class="slogan-div">
       <p class="slogan">
         Mudando o mundo,<br />
-        uma garrafa plástica <br />por vez.
+        um plástico <br />por vez.
       </p>
     </div>
     <div class="image-div">
@@ -32,7 +32,6 @@ export default {
   background-image: url('../assets/plastica.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: black;
   padding-bottom: 40px;
 }
 .slogan {
@@ -64,13 +63,12 @@ export default {
    from { transform: rotate(0deg); }
    to { transform: rotate(360deg); }
 }
-
-@media only screen and (max-device-width: 480px){
+@media screen and (max-width: 992px) {
   .container {
     flex-direction: column;
   }
   .slogan {
-    font-size: 30px;
+    font-size: 40px;
   }
 
   .slogan-div {
@@ -82,6 +80,7 @@ export default {
   .image-div {
     position: absolute;
     right: 0;
+    top: 0;
     overflow: hidden;
   }
 
@@ -92,7 +91,7 @@ export default {
   .loop {
     height: 200px;
     margin-right: -100px;
-    filter: blur(4px);
+    filter: blur(2px);
   }
 }
 </style>
